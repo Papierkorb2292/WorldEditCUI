@@ -15,11 +15,7 @@ allprojects {
     repositories {
         // mirrors:
         // - https://maven.enginehub.org/repo/
-        // - https://maven.terraformersmc.com/releases/
         // - https://maven.minecraftforge.net/
-        // - https://maven.neoforged.net/
-        // - https://maven.parchmentmc.org/
-        // - https://repo.viaversion.com/
         maven(url = "https://repo.stellardrift.ca/repository/stable/") {
             name = "stellardriftReleases"
             mavenContent {
@@ -31,6 +27,10 @@ allprojects {
             name = "stellardriftSnapshots"
             mavenContent { snapshotsOnly() }
         }
+        maven(url = "https://maven.parchmentmc.org/")
+        maven(url = "https://maven.terraformersmc.com/releases/")
+        maven(url = "https://repo.viaversion.com/")
+        maven(url = "https://maven.neoforged.net/")
     }
 }
 

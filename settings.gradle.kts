@@ -14,6 +14,9 @@ pluginManagement {
             name = "stellardriftSnapshots"
             mavenContent { snapshotsOnly() }
         }
+        maven(url = "https://repo.stellardrift.ca/repository/internal/") {
+            name = "stellardriftInternal"
+        }
         // maven("https://maven.fabricmc.net/")
         // gradlePluginPortal()
     }
